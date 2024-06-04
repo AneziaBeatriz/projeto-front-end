@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat+Alternates:wght@400;600&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+body {
+    background-color: black;
+    color: white;
+    font-family: "montserrat", sans-serif; 
+}
+
+.header {
+    justify-content: center;
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+.icone__home:hover {
+    background-color: #272727;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 15%;
+}
+
+.icone__curriculo:hover {
+    background-color: #272727;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 15%;
+}
+
+.icone__cadastro:hover{
+    background-color: #272727;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 15%;
+}
+
+.titulo__principal {
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+    font-size: 50px;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    align-items: center;
+    padding: 16px;
+
+}
+
+a {
+    padding: 26px;
+    color: aqua;
+    text-decoration: none;
+    font-family: "montserrat", sans-serif;
+    font-size: 25px;
+}
+
+img {
+    width: 190px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid aqua;
+}
+
+.center {
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    color: aqua;
+}
+
+.container {
+    text-align: center;
+    align-content: space-between;
+    padding: 100px;
+}
+
+.container__dois {
+    text-align: center;
+    align-content: space-between;
+    padding: 100px;
+}
+
+.segundo__titulo {
+    text-align: center;
+  font-size: 31px;
+}
+
+.terceiro__titulo {
+   font-size: 31px;
+}
+
+.primeiro__texto {
+  opacity: 1;
+  transform: translateY(20px);
+  transition: 1s ease;
+  text-align: center;
+  font-family: 'montserrat', sans-serif;
+}
+
+.segundo__texto {
+    text-align: center;
+    font-size: 17px;
+    font-family: 'montserrat', sans-serif;
+}
+
+.terceiro__texto {
+    text-align: center;
+    font-size: 17px;
+    font-family: 'montserrat', sans-serif;
+}
+
+.section__paragraph--visible {
+    transform: translateY(0);
+    opacity: 0;
+}
+
+.rodape {
+   padding: 1px;
+   color: #000000;
+   background-color: #22d4fd;
+   text-align: center;
+   font-family: 'montserrat', sans-serif;
+   font-size: 24px;
+   font-weight: 400;
+}
+
+.apresentacao {
+    padding: 5% 15%; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ 
+ }
+ 
+ .apresentacao__conteudo {
+     width: 615px;
+     display: flex;
+     flex-direction: column;
+     gap: 40px;
+ } 
+ 
+ .apresentacao__conteudo__titulo {
+     font-size: 36px;
+     font-family:"Krona One", sans-serif;
+ }
+
+ .apresentacao__conteudo__texto {
+    padding: 0% 8% 0% 0%; 
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+   font-size: 24px;
+   font-family: "Montserrat", sans-serif;
+}
+
+.apresentacao__conteudo__experiencias {
+    margin: 0%;
+    padding: 0% 8% 0% 0%; 
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+
+}
+
+.apresentacao__conteudo__habilidades {
+    margin: 0%;
+    padding: 0% 8% 0% 0%; 
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-between;
+   font-size: 24px;
+   font-family: "Montserrat", sans-serif;
+}
+
+.img__curriculo {
+    width: 15%;
+    height: 200px;
+    border: 15% solid white;
+    border-radius: 100%;
+    padding: 10px;
+    margin: 0px 10px 10px 0;
+}
+
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    animation: spinz 1.35s linear infinite;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    z-index: 100;
+}
+
+.loader {
+    border: 16px solid #efeee8;
+    border-top: 16px solid aqua;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 1.35s linear infinite;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -60px;
+    margin-left: -60px;
+}
+
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+    50% {
+        transform: rotate(360deg);
+        opacity: 1;
+    }
+    75% {
+        opacity: 1;
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(0deg);
+        opacity: 0;
+    }
+}
+
+@keyframes spinz {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 1;
+    }
+    75% {
+       opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.nav-button{
+    border: 0;
+    border-radius: 4px;
+    padding: 15px;
+    background-color: aqua;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.nav-button i {
+    color: #000000;
+}
+
+.overlay {
+    height: 100%;
+    /*background-color: rgb (0,0,0); */
+    background-color: #000000;
+    z-index: 9;
+    position: fixed;
+    left: 0;
+    top: 0;
+    overflow-x: hidden;
+    transition: all 0.5s;
+
+}
+
+.overlay-content{
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+
+}
+
+.overlay a{
+    padding: 8px;
+    text-decoration: none;
+    color: aqua;
+    display: block;
+    font-size: 34px;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus{
+    color:  #f1f1f1;
+}
+
+.overlay .closebtn{
+    position: absolute;
+    top: 25px;
+    right: 45px;
+    font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+    .overlay a { font-size: 20px;}
+    .overlay, .closebtn{
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
