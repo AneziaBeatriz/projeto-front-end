@@ -1,191 +1,120 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat+Alternates:wght@400;600&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-
-body {
-    background-color: black;
-    color: white;
-    font-family: "montserrat", sans-serif; 
-}
-
-header {
-    text-align: center;
-}
-
-h3 {
-    text-align: center;
-}
-
-.titulo__principal {
-    margin: auto;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+  }
+  
+  body {
+    width: 100%;
+    height: 150vh;
+    display: flex;
     justify-content: center;
-    text-align: center;
-    font-size: 50px;
-}
-
-.icone__home:hover {
-    background-color: #272727;
-    padding: 10px;
-    border: 1px solid white;
-    border-radius: 15%;
-}
-
-.icone__curriculo:hover {
-    background-color: #272727;
-    padding: 10px;
-    border: 1px solid white;
-    border-radius: 15%;
-}
-
-.icone__exposicao:hover {
-    background-color: #272727;
-    padding: 10px;
-    border: 1px solid white;
-    border-radius: 15%;
-}
-
-.icone__cadastro:hover{
-    background-color: #272727;
-    padding: 10px;
-    border: 1px solid white;
-    border-radius: 15%;
-}
-
-ul {
-    display: flex;
-    justify-content: space-between;
-    list-style-type: none;
     align-items: center;
-    padding: 16px;
-
-}
-
-a {
-    padding: 26px;
-    color: aqua;
+    font-family: 'montserrat', sans-serif;
+    background-image: linear-gradient(to bottom left, #000000, aqua);
+  }
+  
+  .slides {
+    gap: 8px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    width: 600px;
+    height: 900px;
+    padding: 32px;
+    border-radius: 32px;
+  }
+  
+  
+  .prev {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width:  100%;
+    color: rgb(1, 102, 102);
     text-decoration: none;
-    font-family: "montserrat", sans-serif;
-    font-size: 25px;
-}
-
-img {
-    display: block;
-    margin: auto;
-    width: 400px;
-    height: 800px;
-    border-radius: 10%;
-    border: 5px thin solid;
-}
-
-.center {
+  }
+  
+  .prev-text {
+    margin-top: 4px;
+  }
+  
+  .title{
+    font-size: 28px;
+    width:  100%;
+    font-weight: bold;
     text-align: center;
-}
-
-h1 {
+  }
+  
+  .content {
+    width: 200px;
     text-align: center;
-    color: aqua;
-}
-
-.container {
-    text-align: center;
-    align-content: space-between;
-    padding: 100px;
-}
-
-.container__dois {
-    text-align: center;
-    align-content: space-between;
-    padding: 100px;
-}
-
-.segundo__titulo {
-    text-align: center;
-  font-size: 31px;
-}
-
-.terceiro__titulo {
-   font-size: 31px;
-}
-
-.primeiro__texto {
-  text-align: center;
-  font-family: 'montserrat', sans-serif;
-}
-
-.segundo__texto {
-    font-size: 17px;
-    font-family: 'montserrat', sans-serif;
-}
-
-.terceiro__texto {
-    font-size: 17px;
-    font-family: 'montserrat', sans-serif;
-}
-
-.rodape {
-   padding: 20px;
-   margin-right: auto;
-   color: #000000;
-   background-color: #22d4fd;
-   text-align: center;
-   font-family: 'montserrat', sans-serif;
-   font-size: 24px;
-   font-weight: 400;
-}
-
-.apresentacao {
-    padding: 5% 15%; 
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
- 
- }
- 
- .apresentacao__conteudo {
-     width: 615px;
-     display: flex;
-     flex-direction: column;
-     gap: 40px;
- } 
- 
- .apresentacao__conteudo__titulo {
-     font-size: 36px;
-     font-family:"Krona One", sans-serif;
- }
-
- .apresentacao__conteudo__texto {
-    padding: 0% 8% 0% 0%; 
-    width: 615px;
+  }
+  
+  img {
+    width: flex;
+    height: 150px;
+    border-radius: 40%;
+  }
+  
+  .footer {
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    align-items: center;
-    justify-content: space-between;
-   font-size: 24px;
-   font-family: "Montserrat", sans-serif;
-}
+    gap: 28px;
+  }
+  
+  .button:hover {
+    background-color: rgb(1, 102, 102);
+    color: rgb(255, 255, 255);
+    width: 200px;
+    height: 40px;
+    font-size: 16px;
+    border: 1px solid white;
+    cursor: pointer;
+    border-radius: 999px;
+    transition: 400ms;
+  }
+  
+  .dot-box {
+    text-align: center;
+  }
+  
+  .dot {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin: 0 2px;
+    background-color: #c1c1c1;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color .6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: rgb(1, 102, 102);
+  }
+  
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .2}
+    to {opacity: 1}
+  }
 
-.apresentacao__conteudo__experiencias {
-    margin: 0%;
-    padding: 0% 8% 0% 0%; 
-   display: flex;
-   align-items: center;
-   justify-content: space-between;
-
-}
-
-.apresentacao__conteudo__habilidades {
-    margin: 0%;
-    padding: 0% 8% 0% 0%; 
-    width: 615px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    justify-content: space-between;
-   font-size: 24px;
-   font-family: "Montserrat", sans-serif;
-}
-
-.preloader {
+  .preloader {
     position: fixed;
     top: 0;
     left: 0;
@@ -250,7 +179,7 @@ h1 {
     border-radius: 4px;
     padding: 15px;
     background-color: aqua;
-    margin: 10px;
+    margin: 5px;
     cursor: pointer;
 }
 
@@ -308,80 +237,3 @@ h1 {
         right: 35px;
     }
 }
-
-
-fieldset{
-    border:none;
-    }
-      
-    
-    body{
-    padding: 40px;
-    text-align: center;
-    background-color: rgb(0, 0, 0);
-    font-family: 'Krona One', sans-serif;
-    font-size: 1em;
-    color: #f1f1f1;
-    margin-left: auto;
-    margin-top: 0%;
-    justify-content:center;
-    }
-    
-    .campo{
-    margin-bottom:2%;
-        
-    }
-    .campo label{
-    margin-bottom: 2em;
-    color:rgb rgb(0, 255, 255) ;
-    display:grid;
-    }
-    #fieldset.grupo .campo{
-    float:center;
-    margin: right 5%;;
-    }
-    
-    .campo input[type=*text*], .campo input[type=*email*], .campo select, .campo textare {
-        
-    padding: 2em;
-    border: 1px solid rgb(0,255,255);
-    box-shadow: 2px 2px 2px rgb(0, 255,255);
-    display: block;
-    
-    }
-    
-    .campo select option{
-    padding-right:1em;
-    
-    }
-    
-    .campo input:focus, .campo select:focus, .campo textarea:focus{
-    background: #b5afaff8
-    }
-    .botao{
-    font-size: 1.2em;
-    background: #fffffff8;
-    border: 0;
-    margin-bottom: 2em;
-    color: rgb(0, 0, 0);
-    padding: 7px 7px;
-    box-shadow: 5px 5px 5px rgb(rgb(19, 205, 9));
-    text-shadow: 1px 1px 1px rgb(0, 0, 0);
-    position: center;
-    top: 90%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50% -50%);   
-    }
-    
-    
-    .botao:hover{
-    background: aqua;
-    transition: 400ms;
-    cursor: pointer;
-    }
-    
-    .rodape__links {
-        color: #000000;
-
-    } 
